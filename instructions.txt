@@ -1,0 +1,41 @@
+This test is a fullstack test: 
+
+1.-Backend
+2.-Frontend
+
+----------------------- Backend -----------------------
+
+    1.- Navigate to the "back" folder and init a new node.js project (You can use express if you wish)
+    2.- Create 2 files:
+        1.- index.js
+        2.- app.js
+    3.- In the app.js file you must create your express app
+    4.- Create a POST route.
+        1.- The route must be able to receive a variable named "rating" from the body
+        2.- The route must be able to append whatever comes from the rating variable + today's date into a file named rating-records.txt
+            e.g of many 5 POST request to the rating route: 
+                3 ------> today's date
+                1 ------> today's date
+                4 ------> today's date
+                2 ------> today's date
+                5 ------> today's date
+    3.- The rating route must return a 200 status code if everythin is correct and send a message that says: "Thank you for your feedback"
+    4.- Your app must be initialized in the index.js file
+    5.- OPTIONAL: Hanlde errors 
+
+----------------------- Frontend -----------------------
+
+    1.- Navigate to the front folder
+    2.- Open to the Stars component
+    3.- Create a 5 stars rating (horizontal) in such a way that whenever you click over a star the following instructions must be executed:
+        1- The stars must change their color depending on the star selected.
+            e.g: If I click over the third start, the stars 1,2 and 3 must change the color.
+        2.- Consume your previous API to POST your rating number (You can use axios or fetch).
+    4.- OPTIONAL: When the screen size is less than 425px the stars need to be vertical.
+
+    ICONS:
+        npm install @fortawesome/react-fontawesome
+        npm install @fortawesome/free-solid-svg-icons
+        npm install @fortawesome/fontawesome-svg-core
+    
+    LINK TO USE FIND ICONS: https://fontawesome.com/icons
